@@ -1,0 +1,21 @@
+{
+  "name": "generator-hiddencompass",
+  "version": "0.0.0",
+  "description": "Generates an angular project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bitterheart/generator-hiddencompass.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Emory Merryman <emory.merryman@gmail.com>",
+  "license": "GPL3",
+  "bugs": {
+    "url": "https://github.com/bitterheart/generator-hiddencompass/issues"
+  }
+}
