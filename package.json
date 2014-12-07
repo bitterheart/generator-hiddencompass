@@ -19,6 +19,6 @@
     "url": "https://github.com/bitterheart/generator-hiddencompass/issues"
   },
   "dependencies": {
-    "yeoman-generator": "~0.18.3"
+    "yeoman-generator": "0.18.3"
   }
 }
