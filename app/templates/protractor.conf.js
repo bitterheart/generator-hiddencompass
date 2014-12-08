@@ -36,4 +36,4 @@
             defaultTimeoutInterval: 30000
         }
     }
-};
+}());
