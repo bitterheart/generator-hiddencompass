@@ -1,10 +1,11 @@
 (function(){
     "use strict";
     exports.config = {
-        seleniumAddress: "http://localhost:4444/wd/hub"
+        seleniumAddress: "http://localhost:4444/wd/hub",
         suites: {
-            smoke: 'spec/smoketests/*.js',
-            full: 'spec/*.js'
+            local: 'spec/*.js',
+            remote: 'spec/*.js',
+            instant: 'spec/*.js'
         },
         capabilities: {
             browserName: 'chrome',
