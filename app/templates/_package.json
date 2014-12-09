@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
-      "postinstall": "node node_modules/protractor/bin/webdriver-manager update --standalone"
+      "postinstall": "grunt bowerInstall && webdriver-manager update --standalone"
   }
 }

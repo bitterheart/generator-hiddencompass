@@ -9,13 +9,14 @@
         },
         capabilities: {
             browserName: 'chrome',
-            baseUrl: 'http://localhost:9876'
+            baseUrl: 'http://localhost:26978'
         },
         allScriptsTimeout: 11000,
         getPageTimeout: 10000,
         onPrepare: function() {
-            jasmine.getEnv().addReporter(new jasmine.JUnitXmlReporter(
-                'outputdir/', true, true));
+            jasmine.getEnv().addReporter(new require('protractor-html-screenshot-reporter')({
+                baseDirectory: 'reports/correctness/local'
+            }));
         },
         onComplete: function() {
             // At this point, tests will be done but global objects will still be
