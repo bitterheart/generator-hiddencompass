@@ -34,6 +34,7 @@
             grunt: function (){
 //                this.gruntfile.insertConfig("pkg","grunt.file.readJSON(\"package.json\")");
 //                ["grunt-eslint","grunt-karma","grunt-bower-install","grunt-express","grunt-protractor-webdriver","grunt-protractor-coverage"].
+                this.gruntfile.loadNpmTasks("grunt-bower-install");
                 this.gruntfile.loadNpmTasks("grunt-karma");
                 this.gruntfile.loadNpmTasks("grunt-eslint");
                 this.gruntfile.loadNpmTasks("grunt-express");
@@ -128,8 +129,9 @@
             }
         },
         install: function () {
-            this.npmInstall(["grunt-cli","grunt-eslint", "grunt-bower-install", "grunt-karma", "karma-html-reporter", "grunt-istanbul-coverage", "express", "grunt-express", "grunt-protractor-webdriver", "grunt-protractor-coverage", "protractor-html-screenshot-reporter"], {"saveDev": true});
+            this.npmInstall(["bower", "grunt-cli","grunt-eslint", "grunt-bower-install", "grunt-karma", "karma-html-reporter", "grunt-istanbul-coverage", "express", "grunt-express", "grunt-protractor-webdriver", "grunt-protractor-coverage", "protractor-html-screenshot-reporter"], {"saveDev": true});
             this.npmInstall();
+            this.runInstall("node_modules/bower/bin/bower");
             this.bowerInstall(["angular"], {"save": true});
             this.bowerInstall();
             this.installDependencies({});
